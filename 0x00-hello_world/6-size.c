@@ -9,7 +9,7 @@
  */
 int main(void)
 {
-	char ch
+	char ch;
 	int i;
 	long int li;
 	long long int lli;
