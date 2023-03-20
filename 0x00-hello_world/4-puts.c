@@ -1,9 +1,12 @@
 #include <stdio.h>
 
+/* Description of the program - uses puts to print out a sentence */
+
 /**
- * Program uses puts to print out a sentence
- * main is the entry point
- * return - after running the main returns 0
+ * main - Entry point
+ *
+ * Description: The function main is the entry point of the program
+ * Return: 0 is returned showing SUCCESS
  */
 int main(void)
 {
