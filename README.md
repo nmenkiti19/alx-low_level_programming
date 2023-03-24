@@ -1,2 +1,2 @@
-Functions and Nested Loops Readme
-This contains about 11 compulsory tasks
+Low Level Programming Loops Readme
+This contains projects on looping in C
