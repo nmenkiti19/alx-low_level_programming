@@ -1,14 +1,16 @@
 #include "main.h"
 /**
  * _strspn - function to locate a character in a string
- * @s: string 
+ * @s: string
  * @accept: character s
- * Return: returns number of bytes in segment s which consist of bytes from accept
+ * Return: number of bytes in segment s
  */
 unsigned int _strspn(char *s, char *accept)
 {
 	unsigned int i, j;
-	i=0; j=0;
+
+	i = 0;
+	j = 0;
 
 	while (s[i] != '\0')
 	{
