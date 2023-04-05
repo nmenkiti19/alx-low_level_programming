@@ -3,11 +3,15 @@
 /**
  * _puts_recursion - prints a string followed by new line
  * @s: function parameter
- * Return: nothing
  */
 
 void _puts_recursion(char *s)
 {
-	_putchar(s);
-	return (0);
+	if (*s == '\0')
+	{
+		_putchar('\n');
+		return;
+	}
+	_putchar(*s);
+	_puts_recursion(s + 1);
 }
