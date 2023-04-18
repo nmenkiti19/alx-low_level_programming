@@ -5,6 +5,6 @@
  */
 int main(void)
 {
-	printf("The name of the file it was compiled from is %s\n", __FILE__);
+	printf("%s\n", __FILE__);
 	return (0);
 }
