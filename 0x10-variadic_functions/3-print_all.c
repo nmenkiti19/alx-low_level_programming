@@ -1,10 +1,9 @@
 #include "variadic_functions.h"
 #include <stdio.h>
 #include <stdarg.h>
-
 /**
  * print_all - prints anything
- * @format: list of argument types passed 
+ * @format: list of argument types passed
  *
  * Return: nothing
  */
@@ -16,7 +15,6 @@ void print_all(const char * const format, ...)
 	const char temp[] = "cifs";
 
 	va_start(vlist, format);
-
 	i = 0, n = 0;
 	while (format && format[i] != '\0')
 	{
@@ -49,8 +47,7 @@ void print_all(const char * const format, ...)
 			}
 			printf("%s", str);
 			break;
-		}
-		i++;
+		} i++;
 	}
 	printf("\n");
 	va_end(vlist);
