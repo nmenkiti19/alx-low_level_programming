@@ -1,2 +1,1 @@
-Low Level Programming Loops Readme
-This contains projects on looping in C
+This is the readme for more singly linked lists
