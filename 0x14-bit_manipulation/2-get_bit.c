@@ -10,10 +10,11 @@
  */
 int get_bit(unsigned long int n, unsigned int index)
 {
-	int rtshft; 
+	int rtshft;
+
 	if (index > 63)
 		return (-1);
 
 	rtshft = n >> index;
-	return ((rtshft ) & 1);
+	return ((rtshft) & 1);
 }
