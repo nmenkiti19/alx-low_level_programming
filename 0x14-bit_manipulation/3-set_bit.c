@@ -1,20 +1,19 @@
 #include "main.h"
-#include "stdlib.h"
-
 /**
- * get_bit - finds the value of a bit at an index
- * @n: input number
- * @index: index of the bit
- *
- * Return: value of bit at index
+ * set_bit - sets bit at index to 1
+ * @n: pointer to input
+ * @index: index of input
+ * Return: 1 if successful, -1 if it fails
  */
-int get_bit(unsigned long int n, unsigned int index)
+int set_bit(unsigned long int *n, unsigned int index)
 {
-	int rtshft;
+	unsigned int max;
 
-	if (index > 63)
+	max = 63;
+
+	if (index > max)
 		return (-1);
 
-	rtshft = n >> index;
-	return ((rtshft) & 1);
+	*n = *n | (1 << index);
+	return (1);
 }
